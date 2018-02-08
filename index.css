@@ -1,0 +1,361 @@
+/*SNEAKERS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+    font-family: sailec; /* Гарнитура шрифта */
+    src: url(sailec-medium.woff); /* Путь к файлу со шрифтом */
+   }
+body {
+	/*background: url(images/bck.jpg) fixed top center;*/ /*фон не двигается и стоит по центру в верху при уменьшении окна*/
+	background-size: cover; /*это позволяет сохранять равномерные пропорции фона при маштабирование*/
+	position: relative;
+	text-align: center;
+	font-family: sailec;
+	background: #58B4AB;
+	padding: 0;
+  	margin: 0;
+}
+
+h1,h2 {
+	padding-top: 2%;
+	font-size: 1.5em;
+	color: #486B8A;
+	text-shadow: 1px 1px 5px #fff, 0 0 1em #fff;
+}
+img { /*адаптивные картинки*/
+ /* display: block;*//*Делаем изображения блочными элементами.*/  
+  max-width: 100%;/*Задаём максимальную ширину в 100%.*/
+  height: auto;
+}
+p {
+	font-size: 1.5em;
+	color: #486B8A;
+	text-align: center;
+}
+	/*Head*/
+.head {
+	height: 75px;
+	background: #66638B;
+	opacity: 0.9;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /*тень к элементу*/
+}
+.head:hover {
+	opacity: 1;
+	-webkit-transition: 0.3s ease-in-out; /*плавное перемещение элементов при изменение рамеров окна*/
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    
+}
+.head img{
+	position: absolute;
+	left: 9%;
+	height: 75px;
+	width: 130px;
+}
+#sneaklogo {
+	height: 45px;
+	width: 230px;
+	left: 17%;
+	top:2%;
+}
+
+.head a {
+	text-decoration: none;
+	color: #fff;
+	/*position: fixed;*/
+	font-size: 1.5em;
+	text-shadow: 1px 1px 5px #000, 0 0 1em #000;
+}
+.head a:hover {
+	color: #E96463;
+	text-shadow: 1px 1px 5px #000, 0 0 1em #000;
+	-webkit-transition: 0.3s ease-in-out; /*плавное перемещение элементов при изменение рамеров окна*/
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+
+#m {
+	text-decoration-color: #E96463;
+  	text-decoration-line: overline;
+	top: 1.8%;
+	position: absolute;
+	right: 40%;
+}
+#mm {
+	top: 1.8%;
+	position: absolute;
+	right: 40%;
+}
+#k {
+	top: 1.8%;
+	position: absolute;
+	right: 30%;
+}
+#kk {
+	text-decoration-color: #E96463;
+  	text-decoration-line: overline;
+	top: 1.8%;
+	position: absolute;
+	right: 30%;
+}
+#o{
+	top: 1.8%;
+	position: absolute;
+	right: 20%
+}
+#oo {
+	text-decoration-color: #E96463;
+  	text-decoration-line: overline;
+	top: 1.8%;
+	position: absolute;
+	right: 20%
+}
+	/*Head*/
+.run {	
+	left: 15%;
+	top: 20%;
+}
+
+
+
+.fs {
+	display: flex;
+  	align-items: center;
+  	flex-wrap: wrap;
+ 	height: 100%;
+	background: #E96463; /*url(images/bck_mate.png)*/
+	height: 150px;	
+	padding: 1% 1% 1% 1%;
+	/*margin: 0% 10% 0% 10%;*/
+	font-size: 1em;
+	position: fixed;
+	top: 41%;
+	left: 5%;
+	max-width: 20%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /*тень к элементу*/
+}
+.ss {
+	font-size: 1.7em;
+	font-family: monospace;
+	width: 40%;
+}
+.hr {
+	color: #486B8A;
+	text-shadow: none;
+	position: fixed;
+	top: 33%;
+	left: 5%;
+}
+.colors {
+	background: #E96463;
+	display: flex;
+  	align-items: center;
+  	flex-wrap: wrap;
+ 	height: 100%;	
+	height: 400px;	
+	padding: 1% 1% 1% 1%;
+	/*margin: 0% 10% 0% 10%;*/
+	font-size: 1em;
+	position: fixed;
+	top: 41%;
+	right: 5%;
+	width: 15%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /*тень к элементу*/
+}
+.colors a:hover {	
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /*тень к элементу*/
+	-webkit-transition: 0.3s ease-in-out; /*плавное перемещение элементов при изменение рамеров окна*/
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.secondblock {
+	position: relative;
+}
+.tennis {
+	
+	left: 15%;
+	top: 20%;
+}
+	/*BUY*/
+form {
+	position: relative;
+	text-align: center;
+	height: 400px;
+}
+/*form p {
+	position: absolute;
+	top: 2%;
+	left: 35%
+}*/
+input[type="text"] {	
+	border: 0;
+   	border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -khtml-border-radius: 5px;
+    background: #bbdefb !important;
+    outline: none;
+    height: 26px;
+    width: 200px;
+    color: #424242;
+    font-size: 17px;
+    font-family: Tahoma;
+      -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+input[type="text"]:focus {
+	background: #fff !important;
+}
+textarea {
+	height: 80px;
+	width: 600px;	
+	border: 0;
+   	border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -khtml-border-radius: 5px;
+    background: #bbdefb !important;
+    outline: none;
+    color: #424242;
+    font-size: 17px;
+    font-family: Tahoma;
+      -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+textarea:focus {
+	background: #fff !important;
+}
+input[type="radio"] {
+	  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+input[type="submit"] {
+	border: 0;
+   	border-radius: 5px;
+   	-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -khtml-border-radius: 5px;
+    background: #bbdefb !important;    
+    color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+     -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+input[type="submit"]:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+}
+
+.contact {
+	height: 200px;
+}
+#phone1 {
+	position: relative;
+
+}
+#phone2 {
+	
+	border-right: 2px solid black;
+	padding-right: 20px; /* Расстояние между линией и текстом */
+     padding-left: 27%; /*отступ с лева*/
+    text-align: right;
+    float: left;
+}
+
+#add2 {
+	
+	border-left: 2px solid black;	
+	padding-left: 20px; /* Расстояние между линией и текстом */
+     padding-right: 27%; /*отступ с права*/
+    text-align: left;
+	float: right;
+}
+
+
+ .map {
+ 	background: #E96463;
+ 	margin: 0;
+ 	padding: 0;
+ 	  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+ }
+	/*BUY*/
+
+.about {
+	height: 100%;
+}
+
+.about img {
+	border: 4px solid #fff;
+	border-radius: 5px;
+	
+	height: 500px;
+	padding: 10px 10px 10px 10px;
+	margin: 30px 30px 30px 30px;
+}
+.about p {
+	padding: 10px 10px 10px 10px;
+	margin: 30px 30px 30px 30px;
+}
+
+footer {
+	position: relative;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /*тень к элементу*/
+	background: #66638B;
+	opacity: 0.9;
+	height: 5%;
+	color: #fff;
+	
+
+}
+footer p{
+	position: absolute;
+	color: #fff;
+	font-size: 1.2em;
+	left: 25%;
+	top: 25%;
+	font-family: georgia;
+	text-shadow: 1px 1px 5px #000, 0 0 1em #000;
+	letter-spacing: 2px;
+}
+#np {
+	top: 25%;
+	font-family: georgia;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 5px #000, 0 0 1em #000;
+	letter-spacing: 2px;
+	left: 62%;
+}
+footer ul{
+	list-style: none;
+	padding: 1%;
+	
+	font-size: 1.2em;
+	
+}
+footer a{
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 1px 1px 5px #000, 0 0 1em #000;
+	letter-spacing: 2px;
+
+}
+footer a:hover{
+	color: #E96463;
+}
